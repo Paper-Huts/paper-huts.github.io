@@ -1,8 +1,20 @@
-* {
+$main-red: #FF5050;
+
+html, body {
   margin: 0;
   padding: 0;
+}
+
+* {
   box-sizing: border-box;
 }
+
+.main-section {
+  background-color: $main-red;
+  height: 100vh;
+  padding: 15px;
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -18,7 +30,6 @@
 
 [class*="col-"] {
   float: left;
-  padding: 15px;
 }
 
 .row::after {

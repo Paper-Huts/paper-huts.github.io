@@ -1,4 +1,21 @@
-.paperhuts-logo {
-  width: 60%;
-  margin: 0 20%;
+.side-bar {
+  height: 100vh;
+  padding: 15px;
+
+  & .paperhuts-logo {
+    width: 60%;
+    margin: 0 20%;
+  }
+
+  & .logo-space {
+    max-height: 50vh;
+    margin-bottom: 10vh;
+  }
+
+  & .motto1 {
+    text-align: right;
+    justify-content: right;
+    color: red;
+    font-size: 1.3em;
+  }
 }

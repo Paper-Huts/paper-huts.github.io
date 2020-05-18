@@ -13,7 +13,7 @@ const Navigation = () => {
   ])
 
   return (
-    <div className='row'>
+    <div className='navigation'>
       {navList.map(navItem => (
         <Link to={navItem.path} 
           className='navItem' 
