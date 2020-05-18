@@ -1,3 +1,12 @@
 .landing-section {
   color: white;
+
+  & .landing-header {
+    margin-top: 25vh;
+    height: 17vh;
+  }
+
+  & .motto2 {
+    font-size: 150%;
+  }
 }

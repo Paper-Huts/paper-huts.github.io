@@ -8,14 +8,20 @@
   }
 
   & .logo-space {
-    max-height: 50vh;
+    height: 20vh;
     margin-bottom: 10vh;
   }
 
+  .motto {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35vh;
+    height: 10vh;
+    word-wrap: break-word;
+  }
+
   & .motto1 {
-    text-align: right;
-    justify-content: right;
     color: red;
-    font-size: 1.3em;
+    font-size: 150%;
   }
 }

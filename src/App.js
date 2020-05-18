@@ -10,8 +10,8 @@ import About from './pages/about/about'
 import Contact from './pages/contact/contact'
 
 function App() {
-  const [motto1, setMotto1] = useState('Your next starts')
-  const [motto2, setMotto2] = useState('design with us')
+  const [motto1, setMotto1] = useState('Your next design')
+  const [motto2, setMotto2] = useState('starts with us')
   return (
     <div>
       <div className='col-3'>

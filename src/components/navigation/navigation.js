@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faEdit, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 import './navigation.scss'
 
@@ -8,8 +10,9 @@ import Contact from '../../pages/contact/contact'
 
 const Navigation = () => {
   const [navList, setNavList] = useState([
-    { id: 1, title: 'Our Story', path: '/about'},
-    { id: 2, title: 'Contact', path: '/contact' }
+    { id: 0, title: 'Home', path: '/', fa_icon: faHome },
+    { id: 1, title: 'Our Story', path: '/about', fa_icon: faEdit },
+    { id: 2, title: 'Contact', path: '/contact', fa_icon: faPhone }
   ])
 
   return (
@@ -18,7 +21,8 @@ const Navigation = () => {
         <Link to={navItem.path} 
           className='navItem' 
           key={navItem.id}>
-            {navItem.title}
+            <FontAwesomeIcon icon={navItem.fa_icon} />&nbsp;
+            {navItem.title} |
         </Link>
       ))}
     </div>

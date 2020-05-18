@@ -8,11 +8,11 @@ const Landing = ({ motto2 }) => {
   const [title, setTitle] = useState('Graphic')
   return (
     <div className='landing-section'>
-      <div className='row'>
+      <div className='row landing-header'>
         <Header title={title} />
       </div>
       <div className='row'>
-        <span>{motto2}</span>
+        <p className='motto2'>{motto2}</p>
       </div>
     </div>
   )

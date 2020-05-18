@@ -11,8 +11,8 @@ const SideBar = ({ motto1 }) => (
         <img src={logo} className="paperhuts-logo" alt="logo" />
       </Link>
     </div>
-    <div>
-      <p className='motto1'>{motto1}</p>
+    <div className='motto'>
+      <span className='motto1'>{motto1}</span>
     </div>
   </div>
 )
