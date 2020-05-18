@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react'
+import logo from './logo.svg'
+import { Switch, Route } from 'react-router-dom'
+import './App.scss';
+
+import SideBar from './components/side_bar/side_bar'
+import Navigation from './components/navigation/navigation'
+import Landing from './pages/landing/landing'
+import About from './pages/about/about'
+import Contact from './pages/contact/contact'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='row'>
+      <div className='col-3'>
+        <SideBar />
+      </div>
+      <div className='col-9'>
+        <Navigation />
+        <Switch>
+          <Route exact path='/' component={Landing} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/contact' component={Contact} />
+        </Switch>
+      </div>
     </div>
   );
 }
