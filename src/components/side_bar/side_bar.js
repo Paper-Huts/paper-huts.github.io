@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
-import logo from '../../logo.svg'
+import logo from '../../assets/images/PHs Logo.svg'
 import './side_bar.scss'
 
 const SideBar = ({ motto1 }) => (

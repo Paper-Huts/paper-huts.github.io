@@ -1,5 +1,4 @@
-import React, { Fragment, useState } from 'react'
-import logo from './logo.svg'
+import React, { useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import './App.scss';
 
